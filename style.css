@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* GŁÓWNY KONTENER */
+.conteiner-glowny {
+  display: flex;
+  max-width: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: hsl(0, 0%, 100%);
+}
+
+/* OBRAZ */
+.prawa-strona {
+  flex: 1;
+}
+
+.prawa-strona img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEKST */
+.lewa-strona {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* PERFUME */
+.typ-towaru {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+}
+
+/* TYTUŁ */
+.naglowek {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: hsl(212, 21%, 14%);
+}
+
+/* OPIS */
+.opis {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6;
+}
+
+/* CENA */
+.conteiner-cena {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cena {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  color: hsl(158, 36%, 37%);
+}
+
+.przecena {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+/* BUTTON */
+.btn {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: hsl(158, 42%, 18%);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .conteiner-glowny {
+    flex-direction: column;
+    max-width: 350px;
+  }
+
+  .prawa-strona img {
+    height: 250px;
+  }
+}
